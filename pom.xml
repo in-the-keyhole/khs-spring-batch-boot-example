@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>khs-spring-batch-boot-example</groupId>
+  <artifactId>khs-spring-batch-boot-example</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+
+	<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-batch</artifactId>
+    <version>1.2.4.RELEASE</version>
+	</dependency>
+	
+	
+	  <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>4.1.6.RELEASE</version>
+    </dependency>
+	  
+	  <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>4.1.6.RELEASE</version>
+    </dependency>
+	
+	  <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>4.1.6.RELEASE</version>
+    </dependency>
+
+
+
+	  <dependency>
+	  	<groupId>org.scala-lang</groupId>
+	  	<artifactId>scala-library</artifactId>
+	  	<version>2.10.4</version>
+	  </dependency>
+  </dependencies>
+   
+  
+  <properties>                            
+    <spring.framework.version>4.1.6.RELEASE</spring.framework.version>
+    <spring.batch.version>3.0.4.RELEASE</spring.batch.version>
+</properties>
+  
+  
+  
+</project>

@@ -1,0 +1,11 @@
+/target/.idea/
+*.iml
+.classpath
+.settings
+.project
+/build/
+/target/
+/src/main/webapp/*
+!/src/main/webapp/WEB-INF
+bin
+.DS_Store
