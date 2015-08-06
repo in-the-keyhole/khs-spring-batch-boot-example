@@ -1,5 +1,7 @@
 # khs-spring-batch-boot-example
-Spring Batch Example using Java Config and Spring Boot
+Spring Batch example using Java Config and Spring Boot.
+
+For more information, visit this [Java Config blog tutorial](https://keyholesoftware.com/2015/06/29/spring-batch-javaconfig/).
 
 
 Installation 
