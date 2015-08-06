@@ -9,6 +9,7 @@ Installation
 
 	1. Clone Repo 
 	2. Import into STS Eclipse and Configure as a Maven Project 
+	3. Create /data directory on the root of the local machine.
 
 
 Running
