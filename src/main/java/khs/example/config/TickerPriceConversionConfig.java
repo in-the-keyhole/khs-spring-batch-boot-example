@@ -61,10 +61,10 @@ public class TickerPriceConversionConfig {
     @Bean
     public ItemWriter<TickerData> fileWriter() {
     	
-    	FlatFileItemWriter<TickerData> writer = new FlatFileItemWriter<>();
+    	FlatFileItemWriter<TickerData> writer = new FlatFileItemWriter<TickerData>();
     	writer.setName("stock-export.sdf"); 	
     	
-    	FormatterLineAggregator<TickerData> fla = new FormatterLineAggregator<>();
+    	FormatterLineAggregator<TickerData> fla = new FormatterLineAggregator<TickerData>();
     	FieldExtractor<TickerData> fe = new FieldExtractor<TickerData>() {
 			public Object[] extract(TickerData item) {
 				return new Object[] {item.getSymbol(),item.getChangePct(),item.getLastTrade()};
@@ -74,7 +74,7 @@ public class TickerPriceConversionConfig {
     	fla.setFieldExtractor(fe);
     	fla.setFormat("%-5s,%-9s,%-2.2f");
     	writer.setLineAggregator(fla);
-    	writer.setResource(new FileSystemResource( "/users/dpitt/stock-export.sdf"));
+    	writer.setResource(new FileSystemResource( "/data/stock-export.sdf"));
         return writer;
     }
    

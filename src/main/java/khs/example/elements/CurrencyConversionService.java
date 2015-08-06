@@ -2,7 +2,6 @@ package khs.example.elements;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.Currency;
 
 import org.springframework.stereotype.Service;
 
